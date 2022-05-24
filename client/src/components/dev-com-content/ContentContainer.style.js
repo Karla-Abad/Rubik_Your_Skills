@@ -38,4 +38,5 @@ export const ContentTitle = styled.h2`
 export const ContentSubtitle = styled.h3`
     color: gray;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-size: larger;
 `

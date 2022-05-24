@@ -36,7 +36,7 @@ const UserSchema = new mongoose.Schema({
     }, 
     languages: {
         type: String,
-        enum: ["HTML", "CSS", "PYTHON", "JS", "JAVA", "C#", "GO"],
+        enum: ["HTML", "CSS", "PYTHON", "JS", "JAVA", "C#", "GO", "TYPESCRIPT"],
     },
     frameworksOrLibraries: {
         type: String,

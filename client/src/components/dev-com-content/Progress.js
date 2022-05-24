@@ -8,3 +8,13 @@ export const Progress = () => {
         </Stack>
     )
 }
+
+export const ProgressTwo = () => {
+    return (
+        <Stack spacing={2}>
+            <LinearProgress style={{width: 200, height: 20}}  variant='determinate' value={75}/>
+        </Stack>
+    )
+}
+
+

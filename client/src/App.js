@@ -9,6 +9,7 @@ import CompanyLogin from "./pages/CompanyLogin";
 import CompanyRegistration from "./pages/CompanyRegistration";
 import UserLogin from "./pages/UserLogin";
 import UserRegistration from './pages/UserRegistration';
+import UserSkillsFrameworks from "./pages/UserSkillsFrameworks";
 import UserSkillsLanguages from "./pages/UserSkillsLanguages";
 
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/devs/login" element={<UserLogin/>} />
         <Route path="/companies/login" element={<CompanyLogin/>} />
         <Route path="/devs/skills/languages" element={<UserSkillsLanguages/>} />
+        <Route path="/devs/skills/frameworks" element={<UserSkillsFrameworks/>} />
       </Routes>
     </Router>
   );

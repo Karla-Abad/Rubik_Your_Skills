@@ -8,6 +8,7 @@ export const ContentContainer = styled.div`
 export const DevMainWrapper = styled.div`
     border: 3px solid gray;
     margin: auto;
+    width: fit-content;
 `
 
 export const ContentHeaderDiv = styled.div`
@@ -21,12 +22,12 @@ export const ContentHeaderDiv = styled.div`
 `
 
 export const ContentMainDiv = styled.div`
-    padding: 10px;
+    padding: 60px;
     margin: auto;
+    
 `
 
 export const SubContentMainDiv = styled.div`
-    display: flex;
     justify-content: ${(props)=> props.justifyContent};
 `
 export const ContentTitle = styled.h2`
@@ -39,4 +40,6 @@ export const ContentSubtitle = styled.h3`
     color: gray;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     font-size: larger;
+    flex: 3;
+    text-align: left;
 `

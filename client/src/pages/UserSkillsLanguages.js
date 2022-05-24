@@ -11,23 +11,23 @@ import WindowRoundedIcon from '@mui/icons-material/WindowRounded';
 import AssignmentReturnRoundedIcon from '@mui/icons-material/AssignmentReturnRounded';
 import HistoryEduRoundedIcon from '@mui/icons-material/HistoryEduRounded';
 import { AvailableSkillsButton, AvailableSkillsDiv } from "../components/dev-com-content/Icons.style";
+import {Link} from "react-router-dom";
 
 const UserSkillsLanguages = () => {
     return (
         <div>
             <TopBarUser></TopBarUser>
             <Form>
-            <ContentContainer>
+            <ContentContainer >
                 <DevMainWrapper>
                     <ContentHeaderDiv>
                         <ContentTitle>Add Your Skills </ContentTitle>
                         <Progress/>
                     </ContentHeaderDiv>
                     <ContentMainDiv>
+                        <div style={{display:'flex'}}>
                         <SubContentMainDiv>
                             <ContentSubtitle>Pick Your Top 5 Languages: </ContentSubtitle>
-                        </SubContentMainDiv>
-                        <SubContentMainDiv>
                             <AvailableSkillsDiv>
                                 <div>
                                     <AvailableSkillsButton title="HTML" ><HtmlRoundedIcon style={{width:50, height:50}} /></AvailableSkillsButton>
@@ -43,11 +43,16 @@ const UserSkillsLanguages = () => {
                                     <AvailableSkillsButton title="GO" ><AssignmentReturnRoundedIcon style={{width:50, height:50}} /></AvailableSkillsButton>
                                     <AvailableSkillsButton title="TYPESCRIPT" ><HistoryEduRoundedIcon style={{width:50, height:50}} /></AvailableSkillsButton>
                                 </div>
-                                
                             </AvailableSkillsDiv>
                         </SubContentMainDiv>
+                        <SubContentMainDiv style={{marginLeft:"50px"}}>
+                            <AvailableSkillsDiv></AvailableSkillsDiv>
+                            <ContentSubtitle>Short Bio</ContentSubtitle>
+                            <textarea placeholder="Add more about yourself here." style={{width:350, height:135}}></textarea>
+                        </SubContentMainDiv>
+                        </div>
                         <SubContentMainDiv justifyContent="right">
-                            <FormButton>Skip This Step</FormButton>
+                            <Link to="/devs/skills/frameworks"><FormButton>Skip This Step</FormButton></Link>
                             <FormButton> NEXT STEP: Frameworks and Libraries</FormButton>
                         </SubContentMainDiv>
                     </ContentMainDiv>

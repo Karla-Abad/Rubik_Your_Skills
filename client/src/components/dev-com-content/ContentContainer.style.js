@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const ContentContainer = styled.div`
     padding: ${(props)=> props.padding};
     margin: 30px 60px;
+    display: ${(props)=> props.display};
 `
 
 export const DevMainWrapper = styled.div`
@@ -29,6 +30,8 @@ export const ContentMainDiv = styled.div`
 
 export const SubContentMainDiv = styled.div`
     justify-content: ${(props)=> props.justifyContent};
+    display: ${(props)=> props.display};
+    margin:${(props)=> props.margin}
 `
 export const ContentTitle = styled.h2`
     color: white;

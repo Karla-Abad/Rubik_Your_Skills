@@ -33,6 +33,14 @@ export const FormInput = styled.input`
     height:20px;
     flex: 4;
 `
+export const TextAreaInput = styled.textarea`
+    border: 2px solid gray;
+    padding: 2px;
+    border-radius: 5px;
+    height:20px;
+    flex: 4;
+`
+
 export const FormSelect = styled.select`
     border: 2px solid gray;
     padding: 2px;

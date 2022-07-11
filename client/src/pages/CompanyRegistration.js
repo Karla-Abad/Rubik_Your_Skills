@@ -3,7 +3,7 @@ import {RegistrationWrapper} from "../components/topbar/BarWrapper.style"
 import {Subtitle} from "../components/topbar/Title.style"
 import { FormWrapper, Form, FormDiv, FormLabel, FormInput, FormSelect, FormButton } from "../components/forms/Forms.style";
 import {ContentLinks} from "../components/topbar/MenuOptions.style"
-import {Link} from "react-router-dom";
+
 
 const CompanyRegistration = () => {
     return(
@@ -54,7 +54,7 @@ const CompanyRegistration = () => {
                     <FormButton>Register</FormButton>
                </Form>
                <FormDiv>
-               <Link to="/"><ContentLinks>Need to Register and Developer?</ContentLinks></Link>
+               <ContentLinks href="/">Need to Register as a Developer?</ContentLinks>
                </FormDiv>
             </RegistrationWrapper>
         </FormWrapper>

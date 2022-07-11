@@ -12,8 +12,8 @@ const TopBarRegistration = ()=> {
                 <Title>RubikYourSkills</Title>
             </BarWrapper>
             <BarWrapper>
-                <Link to="/devs/login"><MenuOptions>Developer Login</MenuOptions></Link>
-                <Link to="/companies/login"><MenuOptions>Company Login</MenuOptions></Link>
+                <MenuOptions href="/devs/login">Developer Login</MenuOptions>
+                <MenuOptions href="/companies/login">Company Login</MenuOptions>
             </BarWrapper>
         </MenuWrapper>
     )

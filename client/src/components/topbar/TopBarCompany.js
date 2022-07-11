@@ -1,7 +1,7 @@
 import {Subtitle, Title} from "./Title.style"
 import {BarWrapper, MenuWrapper} from "./BarWrapper.style"
 import {Logo} from "./Logo.style"
-import {MenuOptions} from "./MenuOptions.style"
+import {MenuOptions, LogoutButton} from "./MenuOptions.style"
 import {Logout} from "@mui/icons-material"
 
 const TopBarCompany =() => {
@@ -14,7 +14,7 @@ const TopBarCompany =() => {
             <Title>Org Name</Title>
             <BarWrapper>
                 <MenuOptions>Dashboard</MenuOptions>
-                <MenuOptions>Logout <Logout/></MenuOptions>
+                <LogoutButton>Logout <Logout/></LogoutButton>
             </BarWrapper>
         </MenuWrapper>
     )

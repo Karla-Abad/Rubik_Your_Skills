@@ -34,13 +34,65 @@ const UserSchema = new mongoose.Schema({
         required: [true, "Password is required"],
         minlength:[6, "Password must be at least 6 characters long"]
     }, 
-    languages: {
-        type: String,
-        enum: ["HTML", "CSS", "PYTHON", "JS", "JAVA", "C#", "GO", "TYPESCRIPT"],
+    html: {
+        type: Boolean,
+        default: false
     },
-    frameworksOrLibraries: {
-        type: String,
-        enum: ["DJANGO", "FLASK", "RAILS", "SPRING", "REACT", "RUBY", "ANGULAR"],
+    css:{
+        type: Boolean,
+        default: false
+    },
+    python:{
+        type: Boolean,
+        default: false
+    },
+    javascript:{
+        type: Boolean,
+        default: false
+    },
+    java:{
+        type: Boolean,
+        default: false
+    },
+    csharp:{
+        type:Boolean,
+        default: false
+    },
+    go:{
+        type: Boolean,
+        default: false
+    },
+    typescript:{
+        type: Boolean,
+        default: false
+    },
+    django:{
+        type:Boolean,
+        default: false
+    },
+    flask:{
+        type:Boolean,
+        default: false
+    },
+    rails:{
+        type:Boolean,
+        default: false
+    },
+    spring:{
+        type:Boolean,
+        default: false
+    },
+    react:{
+        type:Boolean,
+        default: false
+    },
+    ruby:{
+        type:Boolean,
+        default: false
+    },
+    angular:{
+        type:Boolean,
+        default: false
     },
     shortBio: {
         type: String,

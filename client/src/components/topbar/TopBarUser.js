@@ -1,10 +1,27 @@
 import {Title} from "./Title.style"
 import {BarWrapper, MenuWrapper} from "./BarWrapper.style"
 import {Logo} from "./Logo.style"
-import {MenuOptions} from "./MenuOptions.style"
+import {MenuOptions, LogoutButton} from "./MenuOptions.style"
 import {Logout} from "@mui/icons-material"
+import axios from "axios"
+import {useNavigate} from "react-router-dom";
 
 const TopBarUser = ()=> {
+    let navigate = useNavigate();
+
+    const logout = (e)=>{
+        axios
+        .post("http://localhost:8000/api/users/logout",{},{withCredentials:true})
+        .then((res)=>{
+            console.log(res);
+            console.log(res.data);
+            navigate("/devs/login")
+        })
+        .catch((err)=>{
+            console.log(err);
+        })
+    }
+
     return (
         <MenuWrapper>
             <BarWrapper>
@@ -14,7 +31,7 @@ const TopBarUser = ()=> {
             <BarWrapper>
                 <MenuOptions>Profile</MenuOptions>
                 <MenuOptions>Dashboard</MenuOptions>
-                <MenuOptions>Logout <Logout/></MenuOptions>
+                <LogoutButton onClick={logout}>Logout <Logout/></LogoutButton>
             </BarWrapper>
         </MenuWrapper>
     )
